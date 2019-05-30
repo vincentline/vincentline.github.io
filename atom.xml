@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-30T14:43:57.670Z</updated>
+  <updated>2019-05-30T19:24:29.748Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/05/30/SVGA01/"/>
     <id>http://yoursite.com/2019/05/30/SVGA01/</id>
     <published>2019-05-30T14:20:32.000Z</published>
-    <updated>2019-05-30T14:43:57.670Z</updated>
+    <updated>2019-05-30T19:24:29.748Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,7 @@
       
         
         
-          &lt;p&gt;#SVGA&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一篇面向初学者的文章，希望让你对SVGA有一定了解。&lt;br&gt;&lt;img src=&quot;./sdld.gif&quot; alt=&quot;@这是SVGA实现的动画效果 |
+          &lt;h1 id=&quot;SVGA&quot;&gt;&lt;a href=&quot;#SVGA&quot; class=&quot;headerlink&quot;
         
       
     
