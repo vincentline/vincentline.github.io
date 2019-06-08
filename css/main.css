@@ -1,3 +1,7 @@
+body at-expanding-share-button-desktop {
+  bottom: 280px;
+  right: 30px;
+}
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
@@ -449,7 +453,7 @@ body {
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 800px;
+    width: 700px;
   }
 }
 .main {
@@ -461,7 +465,7 @@ body {
 }
 @media (min-width: 1600px) {
   .container .main-inner {
-    width: 800px;
+    width: 700px;
   }
 }
 .footer {
@@ -478,7 +482,7 @@ body {
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
-    width: 800px;
+    width: 700px;
   }
 }
 pre,
@@ -944,7 +948,7 @@ pre .javascript .function {
   background: transparent;
   border: 2px solid #222;
   text-decoration: none;
-  border-radius: 0;
+  border-radius: 6;
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -1056,16 +1060,22 @@ pre .javascript .function {
   display: inline-block;
   margin: 10px;
 }
+.at-expanding-share-button-desktop .at-expanding-share-button {
+  bottom: 280px;
+  right: 30px;
+}
 .back-to-top {
   box-sizing: border-box;
   position: fixed;
-  bottom: -100px;
-  right: 30px;
-  z-index: 1050;
-  padding: 0 6px;
-  width: 24px;
+  right: 35px;
+  z-index: 1040;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
   background: #222;
-  font-size: 12px;
+  border-radius: 50%;
+  bottom: 304px;
+  font-size: 18px;
   opacity: 1;
   color: #fff;
   cursor: pointer;
@@ -1075,6 +1085,7 @@ pre .javascript .function {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .back-to-top {
@@ -1087,7 +1098,10 @@ pre .javascript .function {
   }
 }
 .back-to-top.back-to-top-on {
-  bottom: 19px;
+  bottom: 240px;
+  width: 50px;
+  height: 50px;
+  right: 30px;
 }
 .header {
   background: transparent;
@@ -1287,6 +1301,10 @@ pre .javascript .function {
   -ms-transform: rotate(30deg);
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
+}
+.at-expanding-share-button-desktop .at-expanding-share-button {
+  bottom: 280px;
+  right: 30px;
 }
 .use-motion .post-block,
 .use-motion .pagination,
@@ -1858,15 +1876,23 @@ pre .javascript .function {
 .sidebar-toggle {
   position: fixed;
   right: 30px;
-  bottom: 45px;
-  width: 14px;
-  height: 14px;
-  padding: 5px;
+  bottom: 300px;
+  width: 22px;
+  height: 22px;
+  padding: 17px 14px 11px 14px;
   background: #222;
+  background-image: url("/images/toux.png");
+  background-size: 50px 50px;
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
   -webkit-transform: translateZ(0);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+}
+.sidebar-toggle:hover {
+  background-image: url("/images/toux02.png");
+  background-size: 50px 50px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-toggle {
@@ -1877,18 +1903,6 @@ pre .javascript .function {
   .sidebar-toggle {
     display: none !important;
   }
-}
-.sidebar-toggle-line {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 2px;
-  width: 100%;
-  background: #fff;
-  margin-top: 3px;
-}
-.sidebar-toggle-line:first-child {
-  margin-top: 0;
 }
 .site-author-image {
   display: block;
@@ -1978,7 +1992,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aaff14;
+  background: #ff2620;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3066,4 +3080,24 @@ hr {
 }
 .main {
   padding-bottom: 200px;
+}
+code {
+  color: #fff;
+  background: #fff;
+  margin: 2px;
+}
+.highlight,
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 6px;
+}
+.highlight,
+code,
+pre {
+  border: 1px solid #fff;
+}
+#at-expanding-share-button {
+  bottom: 360px;
+  right: 30px;
 }
