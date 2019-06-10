@@ -305,19 +305,21 @@ hr {
   height: 1px;
   border: none;
   background-color: #ddd;
-  background-image: repeating-linear-gradient(-45deg, #fff, #fff 2px, transparent 1px, transparent 10px);
 }
 blockquote {
-  padding: 12px 15px 1px 15px;
-  margin-bottom: 25px;
+  padding: 12px 16px 1px 16px;
+  margin-bottom: 10px;
   color: #666;
   background-color: #f7f7f7;
-  border-left: 12px solid #aaa;
-  border-radius: 5px;
+  border-left: 4px solid #aaa;
+  border-radius: 8px;
 }
 blockquote cite::before {
   content: "-";
   padding: 0 5px;
+}
+blockquote p {
+  font-size: 16px;
 }
 dt {
   font-weight: 700;
@@ -1960,13 +1962,15 @@ pre .javascript .function {
   padding: 2px;
   max-width: 96px;
   height: auto;
-  border: 2px solid #333;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 }
 .site-author-name {
   margin: 5px 0 0;
   text-align: center;
   color: #f5f5f5;
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 20px;
 }
 .site-description {
   margin-top: 5px;
@@ -2042,7 +2046,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff40fc;
+  background: #65ff81;
 }
 .links-of-blogroll {
   font-size: 13px;
