@@ -1561,7 +1561,7 @@ pre .javascript .function {
 .posts-expand .post-title {
   text-align: center;
   word-break: break-word;
-  font-weight: 400;
+  font-weight: 700;
 }
 .posts-expand .post-title-link {
   display: inline-block;
@@ -1914,7 +1914,7 @@ pre .javascript .function {
 }
 .sidebar-inner {
   position: relative;
-  padding: 20px 10px;
+  padding: 20px 20px;
   color: #999;
   text-align: center;
 }
@@ -1958,24 +1958,25 @@ pre .javascript .function {
 }
 .site-author-image {
   display: block;
-  margin: 0 auto;
+  margin: 25px auto 20px auto;
   padding: 2px;
-  max-width: 96px;
+  max-width: 72px;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 }
 .site-author-name {
-  margin: 5px 0 0;
+  margin: 15px 0 0;
   text-align: center;
   color: #f5f5f5;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 1;
 }
 .site-description {
-  margin-top: 5px;
+  margin-top: 1px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
 }
 .site-state {
@@ -1986,7 +1987,7 @@ pre .javascript .function {
 }
 .site-state-item {
   display: inline-block;
-  padding: 0 15px;
+  padding: 40px 15px 1px 15px;
   border-left: 1px solid #333;
 }
 .site-state-item:first-child {
@@ -1998,63 +1999,62 @@ pre .javascript .function {
 .site-state-item-count {
   display: block;
   text-align: center;
-  color: inherit;
-  font-weight: 600;
-  font-size: 18px;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-size: 30px;
 }
 .site-state-item-name {
-  font-size: 13px;
+  font-size: 12px;
   color: inherit;
 }
 .feed-link {
-  margin-top: 20px;
+  margin: 10px 0 40px 0;
 }
 .feed-link a {
   display: inline-block;
-  padding: 0 15px;
-  color: #fc6423;
-  border: 1px solid #fc6423;
-  border-radius: 4px;
+  padding: 0 10px;
+  color: #999;
+  border: 2px solid #999;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
 }
 .feed-link a i {
-  color: #fc6423;
-  font-size: 14px;
+  color: #999;
+  font-size: 12px;
 }
 .feed-link a:hover {
   color: #fff;
-  background: #fc6423;
+  background: #ec4800;
+  border: 2px solid #ec4800;
 }
 .feed-link a:hover i {
   color: #fff;
 }
 .links-of-author {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .links-of-author a {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
   margin-bottom: 10px;
+  padding: 0 8px 0 8px;
   border-bottom-color: #333;
-  font-size: 13px;
+  font-size: 14px;
+  background: #444;
+  border-radius: 8px;
 }
-.links-of-author a:before {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 3px;
-  content: " ";
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #65ff81;
+.links-of-author a:hover {
+  background: #555;
+  color: #fff;
 }
 .links-of-blogroll {
-  font-size: 13px;
+  font-size: 14px;
 }
 .links-of-blogroll-title {
   margin-top: 20px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
 }
 .links-of-blogroll-list {
   margin: 0;
@@ -2067,10 +2067,13 @@ pre .javascript .function {
 .links-of-blogroll-item a {
   max-width: 280px;
   box-sizing: border-box;
-  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  border-bottom: 1px solid;
+}
+.links-of-blogroll-item a:hover {
+  color: #fff;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -3005,12 +3008,12 @@ hr {
 }
 @media (max-width: 767px) {
   .posts-expand .post-title {
-    font-size: 22px;
+    font-size: 38px;
   }
 }
 @media (min-width: 1600px) {
   .posts-expand .post-title {
-    font-size: 26px;
+    font-size: 42px;
   }
 }
 .posts-expand .post-title:hover:before {
