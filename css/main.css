@@ -2042,11 +2042,11 @@ pre .javascript .function {
   padding: 0 8px 0 8px;
   border-bottom-color: #333;
   font-size: 14px;
-  background: #444;
+  background-color: #333;
   border-radius: 8px;
 }
 .links-of-author a:hover {
-  background: #555;
+  background-color: #444;
   color: #fff;
 }
 .links-of-blogroll {
