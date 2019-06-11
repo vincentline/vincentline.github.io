@@ -1126,7 +1126,7 @@ pre .javascript .function {
   padding: 7px;
   background: #222;
   border-radius: 50%;
-  bottom: 304px;
+  bottom: 114px;
   font-size: 18px;
   opacity: 1;
   color: #fff;
@@ -1150,7 +1150,7 @@ pre .javascript .function {
   }
 }
 .back-to-top.back-to-top-on {
-  bottom: 240px;
+  bottom: 50px;
   width: 50px;
   height: 50px;
   right: 30px;
@@ -1928,7 +1928,7 @@ pre .javascript .function {
 .sidebar-toggle {
   position: fixed;
   right: 30px;
-  bottom: 300px;
+  bottom: 110px;
   width: 22px;
   height: 22px;
   padding: 17px 14px 11px 14px;
@@ -3154,6 +3154,6 @@ pre {
   border: 1px solid #fff;
 }
 #at-expanding-share-button {
-  bottom: 360px;
+  bottom: 170px;
   right: 30px;
 }
