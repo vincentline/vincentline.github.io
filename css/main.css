@@ -1155,9 +1155,6 @@ pre .javascript .function {
   height: 50px;
   right: 30px;
 }
-.header {
-  background: transparent;
-}
 .header-inner {
   position: relative;
 }
@@ -1336,7 +1333,6 @@ pre .javascript .function {
 }
 .post-body .image-caption,
 .post-body .figure .caption {
-  margin: -20px auto 15px;
   text-align: center;
   font-size: 16px;
   color: #999;
@@ -1601,7 +1597,7 @@ pre .javascript .function {
   font-size: 16px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 60px 0;
+  margin: 1px 0 50px 0;
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
@@ -2830,13 +2826,15 @@ hr {
   margin: 20px 0;
 }
 .main-inner {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .header {
-  background: #f5f5f5;
+  background: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.05) !important;
 }
 .header-inner {
-  padding: 25px 0 20px;
+  padding: 12px 0 12px;
 }
 .header-inner:before,
 .header-inner:after {
@@ -2991,9 +2989,6 @@ hr {
 .posts-expand .post-eof {
   display: none;
 }
-.posts-expand .post {
-  margin-top: 120px;
-}
 .posts-expand .post:first-child {
   margin-top: 0;
 }
@@ -3004,16 +2999,17 @@ hr {
 .posts-expand .post-title {
   position: relative;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 @media (max-width: 767px) {
   .posts-expand .post-title {
-    font-size: 38px;
+    font-size: 44px;
   }
 }
 @media (min-width: 1600px) {
   .posts-expand .post-title {
-    font-size: 42px;
+    font-size: 48px;
   }
 }
 .posts-expand .post-title:hover:before {
@@ -3021,7 +3017,7 @@ hr {
 }
 @media (max-width: 767px) {
   .posts-expand .post-body {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 .posts-expand .post-body img {
@@ -3102,7 +3098,7 @@ hr {
   display: none;
 }
 .page-post-detail .post-meta {
-  margin-bottom: 60px;
+  margin: 0 0 48px 0;
 }
 .pagination {
   margin: 120px 0 0;
