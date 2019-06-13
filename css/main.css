@@ -453,11 +453,11 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 600px;
+  width: 700px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 700px;
+    width: 1000px;
   }
 }
 .main {
@@ -1191,7 +1191,7 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   vertical-align: top;
-  line-height: 36px;
+  line-height: 54px;
   font-size: 20px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -2826,7 +2826,7 @@ hr {
   margin: 20px 0;
 }
 .main-inner {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 .header {
   background: #fff;
@@ -2834,7 +2834,8 @@ hr {
   box-shadow: 0 4px 12px 0 rgba(0,0,0,0.05) !important;
 }
 .header-inner {
-  padding: 12px 0 12px;
+  padding: 1px;
+  height: 58px;
 }
 .header-inner:before,
 .header-inner:after {
@@ -2847,13 +2848,13 @@ hr {
 @media (max-width: 767px) {
   .header-inner {
     width: auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     padding: 10px;
   }
 }
 .site-meta {
   float: left;
-  margin-left: -20px;
+  margin-left: 1px;
   line-height: normal;
 }
 @media (max-width: 767px) {
@@ -2899,7 +2900,7 @@ hr {
 .logo-line-after i {
   position: relative;
   display: block;
-  height: 2px;
+  height: 0px;
   background: #222;
 }
 @media (max-width: 767px) {
@@ -2923,11 +2924,12 @@ hr {
 }
 .menu {
   float: right;
-  margin: 8px 0 0 0;
+  margin: 0;
+  height: 58px;
 }
 @media (max-width: 767px) {
   .menu {
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
     padding: 0;
   }
 }
@@ -2943,19 +2945,30 @@ hr {
   }
 }
 .menu .menu-item a {
-  padding: 0 10px;
-  background: none;
+  padding: 0 16px;
+  font-size: 16px;
+  font-Weight: 300;
   border: none;
-  border-radius: 2px;
+  border-radius: 8px;
   transition-property: background;
+  line-height: 50px;
+  margin: 4px 0 0 0;
+  color: #999;
 }
 @media (max-width: 767px) {
   .menu .menu-item a {
     text-align: left;
   }
 }
+@media (min-width: 1600px) {
+  .container .menu .menu-item a {
+    padding: 0 24px;
+  }
+}
 .menu .menu-item a:hover {
-  background: #e1e1e1;
+  background: #f7f7f7;
+  color: #000;
+  font-Weight: 400;
 }
 .menu a::before {
   display: none;
