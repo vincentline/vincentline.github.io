@@ -190,7 +190,7 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2;
   color: #333;
   background: #fff;
@@ -198,6 +198,7 @@ body {
 @media (max-width: 767px) {
   body {
     padding-right: 0 !important;
+    font-size: 12px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -207,7 +208,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 h1,
@@ -221,13 +222,6 @@ h6 {
   font-weight: bold;
   line-height: 1.5;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 20px 0 15px;
 }
 h1 {
   font-size: 24px;
@@ -281,7 +275,6 @@ p {
   margin: 0 0 20px 0;
 }
 a {
-  color: #333;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid #999;
@@ -311,15 +304,11 @@ blockquote {
   margin-bottom: 10px;
   color: #666;
   background-color: #f7f7f7;
-  border-left: 4px solid #aaa;
-  border-radius: 8px;
+  border-left: 4px solid #666;
 }
 blockquote cite::before {
   content: "-";
   padding: 0 5px;
-}
-blockquote p {
-  font-size: 16px;
 }
 dt {
   font-weight: 700;
@@ -1291,7 +1280,7 @@ pre .javascript .function {
   }
 }
 .post-body p a {
-  color: #000;
+  color: #333;
   border-bottom: 2px solid;
   text-decoration: none;
   font-weight: bold;
@@ -2826,7 +2815,7 @@ hr {
   margin: 20px 0;
 }
 .main-inner {
-  margin-top: 48px;
+  margin-top: 42px;
 }
 .header {
   background: #fff;
@@ -2850,6 +2839,7 @@ hr {
     width: auto;
     margin-bottom: 0px;
     padding: 10px;
+    height: 38px;
   }
 }
 .site-meta {
@@ -3006,23 +2996,25 @@ hr {
   margin-top: 0;
 }
 .posts-expand .post-meta {
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  line-height: 1;
 }
 .posts-expand .post-title {
   position: relative;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.03em;
+  line-height: 1;
 }
 @media (max-width: 767px) {
   .posts-expand .post-title {
-    font-size: 44px;
+    font-size: 36px;
   }
 }
 @media (min-width: 1600px) {
   .posts-expand .post-title {
-    font-size: 48px;
+    font-size: 44px;
   }
 }
 .posts-expand .post-title:hover:before {
@@ -3030,7 +3022,8 @@ hr {
 }
 @media (max-width: 767px) {
   .posts-expand .post-body {
-    font-size: 20px;
+    font-size: 14px;
+    text-align: justify;
   }
 }
 .posts-expand .post-body img {
@@ -3051,29 +3044,39 @@ hr {
   margin-top: 40px;
 }
 .post-button {
-  margin-top: 20px;
+  margin: 10px auto 50px 0;
   text-align: left;
 }
 .post-button a {
-  padding: 0;
-  font-size: 16px;
-  background: none;
-  border: none;
-  border-bottom: 2px solid #666;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 19px;
   transition-property: border;
 }
 @media (max-width: 767px) {
   .post-button a {
-    font-size: 14px;
+    width: 50%;
   }
 }
 @media (min-width: 1600px) {
   .post-button a {
-    font-size: 18px;
+    font-size: 16px;
+    border: 2px solid #333;
   }
 }
 .post-button a:hover {
-  border-bottom-color: #222;
+  color: #fff;
+  background-color: #333;
+}
+@media (max-width: 767px) {
+  .post-button {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
