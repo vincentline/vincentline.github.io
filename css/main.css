@@ -1984,9 +1984,12 @@ pre .javascript .function {
 .site-state-item-count {
   display: block;
   text-align: center;
-  color: #f5f5f5;
+  color: #eee;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 36px;
+}
+.site-state-item-count:hover {
+  color: #fff;
 }
 .site-state-item-name {
   font-size: 12px;
@@ -1997,10 +2000,10 @@ pre .javascript .function {
 }
 .feed-link a {
   display: inline-block;
-  padding: 0 10px;
+  padding: 4px 20px;
   color: #999;
   border: 2px solid #999;
-  border-radius: 8px;
+  border-radius: 19px;
   font-size: 12px;
   font-weight: 600;
 }
@@ -2024,11 +2027,11 @@ pre .javascript .function {
   vertical-align: middle;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 0 8px 0 8px;
+  padding: 2px 12px;
   border-bottom-color: #333;
   font-size: 14px;
   background-color: #333;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 .links-of-author a:hover {
   background-color: #444;
