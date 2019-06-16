@@ -190,15 +190,15 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 16px;
+  line-height: 1.8;
   color: #333;
   background: #fff;
 }
 @media (max-width: 767px) {
   body {
     padding-right: 0 !important;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -208,7 +208,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -300,15 +300,28 @@ hr {
   background-color: #ddd;
 }
 blockquote {
-  padding: 12px 16px 1px 16px;
+  padding: 12px 18px 1px 18px;
   margin-bottom: 10px;
   color: #666;
-  background-color: #f7f7f7;
-  border-left: 4px solid #666;
+  background-color: #fbfbfb;
+  border-left: 8px solid #ddd;
 }
 blockquote cite::before {
   content: "-";
   padding: 0 5px;
+}
+blockquote p {
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  blockquote p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1600px) {
+  blockquote p {
+    font-size: 16px;
+  }
 }
 dt {
   font-weight: 700;
@@ -483,10 +496,16 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: #4d4d4c;
   background: #f7f7f7;
-  line-height: 1.6;
+  line-height: 1.8;
+}
+@media (max-width: 767px) {
+  pre,
+  .highlight {
+    font-size: 12px;
+  }
 }
 pre,
 code {
@@ -498,7 +517,12 @@ code {
   color: #333;
   background: #eee;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  code {
+    font-size: 12px;
+  }
 }
 pre {
   padding: 10px;
@@ -552,7 +576,7 @@ pre code {
   padding-right: 10px;
   color: #869194;
   text-align: right;
-  background-color: #eff2f3;
+  background-color: #e8eced;
 }
 .highlight .code pre {
   width: 100%;
@@ -621,7 +645,7 @@ pre .xml .cdata,
 pre .special,
 pre .number,
 pre .formula {
-  color: #718c00;
+  color: #00b4d4;
 }
 pre .title,
 pre .css .hexcolor {
@@ -2158,14 +2182,11 @@ pre .javascript .function {
   color: #fff;
 }
 .footer {
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
 }
 .footer img {
   border: none;
-}
-.footer-inner {
-  text-align: center;
 }
 .with-love {
   display: inline-block;
@@ -3137,7 +3158,7 @@ hr {
 }
 .footer-inner {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .footer-inner {
@@ -3160,13 +3181,12 @@ code {
 .highlight,
 pre {
   margin: 5px 0;
-  padding: 5px;
-  border-radius: 6px;
+  padding: 0;
 }
 .highlight,
 code,
 pre {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 #at-expanding-share-button {
   bottom: 170px;
