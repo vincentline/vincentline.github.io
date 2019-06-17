@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-16T17:08:40.878Z</updated>
+  <updated>2019-06-17T18:58:43.887Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于SVGA（二）</title>
+    <link href="http://yoursite.com/2019/06/18/SVGA02/"/>
+    <id>http://yoursite.com/2019/06/18/SVGA02/</id>
+    <published>2019-06-17T18:57:17.000Z</published>
+    <updated>2019-06-17T18:58:43.887Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;SVGA适合广泛使用在很多地方，UI图标动效上、直播大礼物动效上、甚至游戏动效，不同的场景使用需求会很不同。这篇是讲SVGA在设计中的一些使用技巧，希望可以不同场景下的使用给大家带来一些灵感。&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HEXO NEXT魔改记录</title>
+    <link href="http://yoursite.com/2019/06/16/HEXO-NEXT%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2019/06/16/HEXO-NEXT魔改记录/</id>
+    <published>2019-06-16T13:03:15.000Z</published>
+    <updated>2019-06-17T19:04:40.641Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>关于SVGA（一）</title>
     <link href="http://yoursite.com/2019/06/04/svga01-0/"/>
     <id>http://yoursite.com/2019/06/04/svga01-0/</id>
     <published>2019-06-04T14:20:32.000Z</published>
-    <updated>2019-06-16T17:08:40.878Z</updated>
+    <updated>2019-06-17T16:54:32.744Z</updated>
     
     <summary type="html">
     
@@ -32,51 +76,7 @@
           &lt;blockquote&gt;
 &lt;p&gt;工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于SVGA</title>
-    <link href="http://yoursite.com/2019/05/30/SVGA01/"/>
-    <id>http://yoursite.com/2019/05/30/SVGA01/</id>
-    <published>2019-05-30T14:20:32.000Z</published>
-    <updated>2019-06-06T05:38:08.893Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;SVGA&quot;&gt;&lt;a href=&quot;#SVGA&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World测试测试</title>
-    <link href="http://yoursite.com/2019/05/26/hello-world/"/>
-    <id>http://yoursite.com/2019/05/26/hello-world/</id>
-    <published>2019-05-26T14:01:05.338Z</published>
-    <updated>2019-05-30T02:20:43.805Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+&lt;h1 id=&quot;svga是啥？&quot;&gt;&lt;a href=&quot;#svga是啥？&quot; class=&quot;headerlink&quot;
         
       
     

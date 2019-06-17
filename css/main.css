@@ -3027,7 +3027,7 @@ hr {
 .posts-expand .post-title {
   position: relative;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1;
 }
@@ -3172,11 +3172,6 @@ hr {
 }
 .main {
   padding-bottom: 200px;
-}
-code {
-  color: #fff;
-  background: #fff;
-  margin: 2px;
 }
 .highlight,
 pre {
