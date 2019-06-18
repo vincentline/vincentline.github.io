@@ -109,12 +109,12 @@
 
 
 
-<meta name="description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  一、SVGA是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的` apng `、` webp `、` gif `；` 视频格式 `；Dragonbones、Spine、Deep Motion Creature导出的动画资">
+<meta name="description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  一、SVGA是啥？ 这是SVGA实现的动画效果  设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的apng、webp、gif；视频格式；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是jason格式 ）等">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于SVGA（一）">
 <meta property="og:url" content="http://yoursite.com/2019/06/04/svga01-0/index.html">
 <meta property="og:site_name" content="Say sth.Design">
-<meta property="og:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  一、SVGA是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的` apng `、` webp `、` gif `；` 视频格式 `；Dragonbones、Spine、Deep Motion Creature导出的动画资">
+<meta property="og:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  一、SVGA是啥？ 这是SVGA实现的动画效果  设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的apng、webp、gif；视频格式；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是jason格式 ）等">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.png">
@@ -124,10 +124,10 @@
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s04.png">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/tujie01.png">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s06.png">
-<meta property="og:updated_time" content="2019-06-18T12:09:40.405Z">
+<meta property="og:updated_time" content="2019-06-18T12:22:05.811Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于SVGA（一）">
-<meta name="twitter:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  一、SVGA是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的` apng `、` webp `、` gif `；` 视频格式 `；Dragonbones、Spine、Deep Motion Creature导出的动画资">
+<meta name="twitter:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  一、SVGA是啥？ 这是SVGA实现的动画效果  设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的apng、webp、gif；视频格式；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是jason格式 ）等">
 <meta name="twitter:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif">
 
 
@@ -370,8 +370,8 @@
 </blockquote>
 <h1 id="一、SVGA是啥？"><a href="#一、SVGA是啥？" class="headerlink" title="一、SVGA是啥？"></a>一、SVGA是啥？</h1><p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif" alt="@这是SVGA实现的动画效果 | center"></p>
 <center><font color="#a0a6bb">这是SVGA实现的动画效果</font></center>
-设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的` apng `、` webp `、` gif `；` 视频格式 `；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是` jason格式 ` ）等等。
 
+<p>设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的<code>apng</code>、<code>webp</code>、<code>gif</code>；<code>视频格式</code>；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是<code>jason格式</code> ）等等。</p>
 <p>而SVGA算是其中一种方式。</p>
 <p>SVGA是yy（欢聚时代）开发的一种动效实现解决方案。<a href="https://github.com/yyued" target="_blank" rel="noopener">SVGA在github</a>。这是支持iOS、Android、web三端播放，支持Ae、An制作并导出，性能好、学习成本低的比较完善的方案。和上面其他格式的比较，后面会提到。</p>
 <p>直接解压一个SVGA 1.0的文件你会知道他是什么：</p>
