@@ -109,12 +109,12 @@
 
 
 
-<meta name="description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  svga是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的apng、webp、gif；视频格式；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是jason格式）等等...">
+<meta name="description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  svga是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的`apng`、`webp`、`gif`；`视频格式`；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是`jaso">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于SVGA（一）">
 <meta property="og:url" content="http://yoursite.com/2019/06/04/svga01-0/index.html">
 <meta property="og:site_name" content="Say sth.Design">
-<meta property="og:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  svga是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的apng、webp、gif；视频格式；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是jason格式）等等...">
+<meta property="og:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  svga是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的`apng`、`webp`、`gif`；`视频格式`；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是`jaso">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.png">
@@ -124,10 +124,10 @@
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s04.png">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/tujie01.png">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s06.png">
-<meta property="og:updated_time" content="2019-06-17T16:54:32.744Z">
+<meta property="og:updated_time" content="2019-06-18T04:42:22.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于SVGA（一）">
-<meta name="twitter:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  svga是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的apng、webp、gif；视频格式；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是jason格式）等等...">
+<meta name="twitter:description" content="工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。  svga是啥？ 这是SVGA实现的动画效果 设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的`apng`、`webp`、`gif`；`视频格式`；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是`jaso">
 <meta name="twitter:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif">
 
 
@@ -370,10 +370,10 @@
 </blockquote>
 <h1 id="svga是啥？"><a href="#svga是啥？" class="headerlink" title="svga是啥？"></a>svga是啥？</h1><p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif" alt="@这是SVGA实现的动画效果 | center"></p>
 <center><font color="#a0a6bb">这是SVGA实现的动画效果</font></center>
-设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的apng、webp、gif；视频格式；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是jason格式）等等...
+设计师完成动效设计后，输出的方式千千万万，例如最常见的png序列帧；把png序列帧合并到一起的`apng`、`webp`、`gif`；`视频格式`；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是`jason格式`）等等...
 而SVGA算是其中一种方式。
-SVGA是yy（欢聚时代）开发的一种动效实现解决方案。（[SVGA在github的内容](https://github.com/yyued)
-）。这是支持iOS、Android、web三端播放，支持Ae、An制作并导出，性能好、学习成本低的比较完善的方案。和上面其他格式的比较，后面会提到。
+SVGA是yy（欢聚时代）开发的一种动效实现解决方案。（[SVGA在github的内容][3]
+）。这是支持iOS、Android、web三端播放，支持Ae、An制作并导出，性能好、学习成本低的比较完善的方案。和上面其他格式的比较，后面会提到（[SVGA的优势是什么？](# SVGA的优势是什么？)）。
 
 <p>直接解压一个SVGA 1.0的文件你会知道他是什么：</p>
 <p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.png" alt="@把SVGA 1.0的文件后缀改成zip，解压就会得到图片文件和movie.spec | center"></p>
@@ -382,7 +382,7 @@ SVGA是yy（欢聚时代）开发的一种动效实现解决方案。（[SVGA在
 <p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s02.png" alt="@用记事本打开movie.spec，会看到很多代码 | center"></p>
 <center><font color="#a0a6bb">用记事本打开movie.spec，会看到很多代码</font></center>
 
-<p>压缩包里，没有序列帧，没有swf。里面的图片，是动画素材，而动画的信息，就是用movie.spec记录下来。<br>换句话说，<strong><font color="#000">SVGA，是把动画用代码的方式记录了下来，打包成一个文件，然后放到各端的播放器上播出来。</font></strong>(这就导致，An、Ae里的滤镜、效果，要支持比较困难，因为代码能记录的动画是比较有限的。)</p>
+<p>压缩包里，没有序列帧，没有swf。里面的图片，是动画素材，而动画的信息，就是用<code>movie.spec</code>记录下来。<br>换句话说，<strong><font color="#000">SVGA，是把动画用代码的方式记录了下来，打包成一个文件，然后放到各端的播放器上播出来。</font></strong>(这就导致，An、Ae里的滤镜、效果，要支持比较困难，因为代码能记录的动画是比较有限的。)</p>
 <hr>
 <h1 id="SVGA记录动画数据的特点"><a href="#SVGA记录动画数据的特点" class="headerlink" title="SVGA记录动画数据的特点"></a>SVGA记录动画数据的特点</h1><p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/jieshi01.gif" alt="@这是一个缓动位移动画 | center"></p>
 <center><font color="#a0a6bb">这是一个缓动位移动画</font></center>
@@ -395,7 +395,7 @@ SVGA是yy（欢聚时代）开发的一种动效实现解决方案。（[SVGA在
 
 <h4 id="记录方式二，记录每帧的动画数据："><a href="#记录方式二，记录每帧的动画数据：" class="headerlink" title="记录方式二，记录每帧的动画数据："></a>记录方式二，记录每帧的动画数据：</h4><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片.png，在<span class="number">0</span>ms，xy:<span class="number">0</span>,<span class="number">0</span>；在<span class="number">100</span>ms，xy:<span class="number">15</span>,<span class="number">15</span>；在<span class="number">200</span>ms，xy:<span class="number">30</span>,<span class="number">30</span>；</span><br><span class="line">在<span class="number">300</span>ms，xy:<span class="number">45</span>,<span class="number">45</span>；在<span class="number">400</span>ms，xy:<span class="number">50</span>,<span class="number">50</span>；......  在<span class="number">800</span>ms，xy:<span class="number">80</span>,<span class="number">80</span>；</span><br></pre></td></tr></table></figure>
 
-<p><code><p>方式一类似AE</p></code>的显示，有每个关键帧的数据。<br>方式二是记录每一帧的数据，相当于所有帧都k帧，记录下所有帧的数据。</p>
+<p>方式一类似AE的显示，有每个关键帧的数据。<br>方式二是记录每一帧的数据，相当于所有帧都k帧，记录下所有帧的数据。</p>
 <p><strong><font color="#000">SVGA使用的是方式二。</font></strong></p>
 <p>可以看出方式一的数据量更少，但是方式二的好处，是播放器端（就是客户端），不用再去解析这些动画，只需要读取和显示每一帧里，图片资源的动画属性（位置、透明度、缩放等信息）。特别是有缓动的动画，方式一会把缓动的解析的计算量给到播放器端去实现，播放器端就需要消耗更多计算量，性能消耗大。<br>而方式二没有这个问题，<strong><font color="#000">方式二性能会好点的</font></strong>。</p>
 <p>当然也有缺点，就是如果时长太长，帧数多，数据就非常多。之前做猫的动效的时候，时长太长的SVGA加载巨慢，可能就是因为帧数过多导致。<br>也就是说，<strong><font color="#000">SVGA文件适合时长较短的动画</font></strong>，时长太长可以考虑分成几个SVGA来制作。而直播间里的动效，一般8秒以内，最适合SVGA。</p>
