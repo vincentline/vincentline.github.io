@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-17T19:04:40.641Z</updated>
+  <updated>2019-06-21T18:37:52.038Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>闲谈动画01情感</title>
+    <link href="http://yoursite.com/2019/06/22/%E5%85%B3%E4%BA%8E%E5%8A%A8%E7%94%BB%E7%9A%84%E7%82%B9%E6%BB%B401%E6%83%85%E6%84%9F/"/>
+    <id>http://yoursite.com/2019/06/22/关于动画的点滴01情感/</id>
+    <published>2019-06-21T18:21:50.000Z</published>
+    <updated>2019-06-21T18:37:52.038Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;动画相对于UI来说，是多了很多感情色彩。&lt;/p&gt;
+&lt;p&gt;UI、交互之类，思考各种逻辑，各种目的目标，各种引导用户，各种使用流程等，而动画有时候会需要很多具有感情色彩的东西，让动画更生动有趣，更好表达想表达的。&lt;/p&gt;
+&lt;p&gt;动画的表现力，遵循一些运动原理（加速度、惯性、形变
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>HEXO NEXT魔改记录</title>
