@@ -184,8 +184,8 @@ th {
   padding: 0;
 }
 ::selection {
-  background: #262a30;
-  color: #fff;
+  background: #e5f9fd;
+  color: #000;
 }
 body {
   position: relative;
