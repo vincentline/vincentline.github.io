@@ -190,15 +190,15 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
-  color: #333;
+  color: #222;
   background: #fff;
 }
 @media (max-width: 767px) {
   body {
     padding-right: 0 !important;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -208,7 +208,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 h1,
@@ -217,7 +217,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
@@ -271,9 +270,6 @@ h6 {
     font-size: 10px;
   }
 }
-p {
-  margin: 0 0 20px 0;
-}
 a {
   text-decoration: none;
   outline: none;
@@ -283,10 +279,6 @@ a {
 a:hover {
   color: #222;
   border-bottom-color: #222;
-}
-blockquote {
-  margin: 0;
-  padding: 0;
 }
 img {
   display: block;
@@ -300,27 +292,38 @@ hr {
   background-color: #ddd;
 }
 blockquote {
-  padding: 12px 18px 1px 18px;
-  margin-bottom: 10px;
+  padding: 20px 18px;
+  margin: 26px 0 0 0;
   color: #666;
   background-color: #fbfbfb;
-  border-left: 8px solid #ddd;
+  border-left: 6px solid #ddd;
+}
+blockquote p {
+  margin: 0;
+}
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+  margin: 0;
 }
 blockquote cite::before {
   content: "-";
   padding: 0 5px;
 }
 blockquote p {
-  font-size: 18px;
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   blockquote p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1600px) {
   blockquote p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 dt {
@@ -496,7 +499,7 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #4d4d4c;
   background: #f7f7f7;
   line-height: 1.8;
@@ -504,7 +507,7 @@ pre,
 @media (max-width: 767px) {
   pre,
   .highlight {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 pre,
@@ -514,14 +517,14 @@ code {
 code {
   padding: 2px 4px;
   word-wrap: break-word;
-  color: #333;
+  color: #222;
   background: #eee;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   code {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 pre {
@@ -990,7 +993,7 @@ pre .javascript .function {
 }
 .post-body .tabs ul.nav-tabs li.tab.active a {
   cursor: default;
-  color: #333;
+  color: #222;
 }
 .post-body .tabs .tab-content {
   background-color: #fff;
@@ -1009,7 +1012,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #333;
+  color: #222;
   background: transparent;
   border: 2px solid #222;
   text-decoration: none;
@@ -1036,7 +1039,7 @@ pre .javascript .function {
   display: block;
   width: 22px;
   height: 2px;
-  background: #333;
+  background: #222;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -1296,7 +1299,7 @@ pre .javascript .function {
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  color: #333;
+  color: #222;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1304,10 +1307,10 @@ pre .javascript .function {
   }
 }
 .post-body p a {
-  color: #333;
+  color: #222;
   border-bottom: 2px solid;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 .post-body p a ；,
 .post-body p a:hover {
@@ -1316,7 +1319,6 @@ pre .javascript .function {
   text-decoration: none;
 }
 .footer a {
-  color: #000;
   border-bottom: 1px solid;
   text-decoration: none;
   font-weight: none;
@@ -1347,7 +1349,7 @@ pre .javascript .function {
 .post-body .image-caption,
 .post-body .figure .caption {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1405,13 +1407,6 @@ pre .javascript .function {
     text-align: justify;
   }
 }
-.posts-expand .post-body h2,
-.posts-expand .post-body h3,
-.posts-expand .post-body h4,
-.posts-expand .post-body h5,
-.posts-expand .post-body h6 {
-  margin-top: 28px;
-}
 .posts-expand .post-body h2 .header-anchor,
 .posts-expand .post-body h3 .header-anchor,
 .posts-expand .post-body h4 .header-anchor,
@@ -1447,7 +1442,7 @@ pre .javascript .function {
   border: none;
 }
 .posts-expand .post-body .fancybox img {
-  margin: 50px auto;
+  margin: 30px auto 0;
 }
 @media (max-width: 767px) {
   .posts-collapse {
@@ -1575,7 +1570,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #333;
+  color: #222;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1691,7 +1686,7 @@ pre .javascript .function {
   line-height: 25px;
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #222;
   border-bottom: none;
 }
 .post-nav-item a:hover {
@@ -1786,7 +1781,7 @@ pre .javascript .function {
 }
 .sidebar a {
   color: #999;
-  border-bottom-color: #333;
+  border-bottom-color: #222;
 }
 .sidebar a:hover {
   color: #eee;
@@ -1859,7 +1854,7 @@ pre .javascript .function {
   text-align: center;
   color: #f5f5f5;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1;
 }
 .site-description {
@@ -1877,7 +1872,7 @@ pre .javascript .function {
 .site-state-item {
   display: inline-block;
   padding: 40px 15px 1px 15px;
-  border-left: 1px solid #333;
+  border-left: 1px solid #222;
 }
 .site-state-item:first-child {
   border-left: none;
@@ -1890,13 +1885,13 @@ pre .javascript .function {
   text-align: center;
   color: #eee;
   font-weight: 400;
-  font-size: 38px;
+  font-size: 40px;
 }
 .site-state-item-count:hover {
   color: #fff;
 }
 .site-state-item-name {
-  font-size: 14px;
+  font-size: 16px;
   color: inherit;
 }
 .feed-link {
@@ -1932,7 +1927,7 @@ pre .javascript .function {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 2px 12px;
-  border-bottom-color: #333;
+  border-bottom-color: #222;
   font-size: 14px;
   background-color: #333;
   border-radius: 16px;
@@ -2026,7 +2021,7 @@ pre .javascript .function {
   transition-delay: 0s;
   transition-property: all;
   color: #999;
-  border-bottom-color: #333;
+  border-bottom-color: #222;
 }
 .post-toc ol a:hover {
   color: #ccc;
@@ -2505,7 +2500,7 @@ pre .javascript .function {
   width: 10px;
   height: 10px;
   opacity: 0.5;
-  background: #333;
+  background: #222;
   border: 1px solid #fff;
   border-radius: 50%;
 }
@@ -2710,22 +2705,21 @@ pre .javascript .function {
 .page-post-detail .comments {
   overflow: hidden;
 }
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 20px 0 10px;
+  margin: 60px 0 0;
+}
+h1 {
+  margin: 90px 0 10px;
 }
 p {
-  margin: 0 0 25px 0;
-}
-a {
-  border-bottom-color: #ccc;
+  margin: 26px 0 0 0;
 }
 hr {
-  margin: 20px 0;
+  margin: 100px 60px;
 }
 .main-inner {
   margin-top: 42px;
@@ -2849,7 +2843,7 @@ hr {
 }
 .menu .menu-item a {
   padding: 0 16px;
-  font-size: 18px;
+  font-size: 20px;
   font-Weight: 300;
   border: none;
   border-radius: 8px;
@@ -2935,7 +2929,7 @@ hr {
 }
 @media (max-width: 767px) {
   .posts-expand .post-body {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
   }
 }
@@ -2957,17 +2951,17 @@ hr {
   margin-top: 40px;
 }
 .post-button {
-  margin: 10px auto 50px 0;
+  margin: 10px auto 50px;
   text-align: left;
 }
 .post-button a {
   padding: 0 16px;
   font-size: 16px;
-  font-weight: 900;
-  color: #333;
+  font-weight: 700;
+  color: #222;
   background-color: #fff;
-  border: 2px solid #333;
-  border-radius: 19px;
+  border: 2px solid #222;
+  border-radius: 20px;
   transition-property: border;
 }
 @media (max-width: 767px) {
@@ -2978,16 +2972,16 @@ hr {
 @media (min-width: 1600px) {
   .post-button a {
     font-size: 18px;
-    border: 2px solid #333;
+    border: 2px solid #222;
   }
 }
 .post-button a:hover {
   color: #fff;
-  background-color: #333;
+  background-color: #222;
 }
 @media (max-width: 767px) {
   .post-button {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
   }
 }

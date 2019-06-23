@@ -109,12 +109,12 @@
 
 
 
-<meta name="description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦……✨SVGA✨是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了">
+<meta name="description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦…… ✨SVGA✨是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。 工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于SVGA（一）">
 <meta property="og:url" content="http://yoursite.com/2019/06/04/svga01-0/index.html">
 <meta property="og:site_name" content="Say sth.Design">
-<meta property="og:description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦……✨SVGA✨是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了">
+<meta property="og:description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦…… ✨SVGA✨是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。 工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.jpg">
@@ -127,10 +127,10 @@
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/%E5%86%B0.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgamengban02.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/%E6%B8%B8%E8%BD%AE50022_1.gif">
-<meta property="og:updated_time" content="2019-06-23T06:37:45.697Z">
+<meta property="og:updated_time" content="2019-06-23T08:15:22.656Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于SVGA（一）">
-<meta name="twitter:description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦……✨SVGA✨是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了">
+<meta name="twitter:description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦…… ✨SVGA✨是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。 工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一">
 <meta name="twitter:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif">
 
 
@@ -371,13 +371,16 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦……<br><span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>SVGA<span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。<br>工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦……</p>
+<p><span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>SVGA<span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>是一个比较靠谱的解决方案，从设计软件导出到移动、web、PC，3端一条龙全支持，动效实现利器。</p>
+<p>工作中对SVGA的接触比多，小结了一篇科普向的面向初学者的文章，希望让你对SVGA有一定了解。</p>
 <h1 id="一、SVGA是啥？"><a href="#一、SVGA是啥？" class="headerlink" title="一、SVGA是啥？"></a>一、SVGA是啥？</h1><p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif" alt="@这是SVGA实现的动画效果 | center"></p>
 <center><font color="#a0a6bb">这是SVGA实现的动画效果</font></center>
 
 <p>设计师完成动效设计后，输出的方式千千万万，例如最常见的<code>png序列帧</code>；把png序列帧合并到一起的<code>apng</code>、<code>webp</code>、<code>gif</code>；<code>视频格式</code>；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是<code>jason格式</code> ）等等。</p>
 <p>而SVGA算是其中一种方式。</p>
-<p>SVGA是YY（欢聚时代）开发的一种动效实现解决方案。<a href="https://github.com/yyued" target="_blank" rel="noopener">SVGA在github上的内容</a><br>对前端工程师来说，这是支持iOS、Android、web三端播放，对设计师来说，这是支持Ae、An制作导出，性能好、学习成本低的比较完善的方案。和上面其他格式的比较，后面会提到。</p>
+<p>SVGA是YY（欢聚时代）开发的一种动效实现解决方案。<a href="https://github.com/yyued" target="_blank" rel="noopener">SVGA在github上的内容</a></p>
+<p>对前端工程师来说，这是支持iOS、Android、web三端播放，对设计师来说，这是支持Ae、An制作导出，性能好、学习成本低的比较完善的方案。和上面其他格式的比较，后面会提到。</p>
 <p>直接解压一个SVGA 1.0的文件可以知道他的大概原理：</p>
 <p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.jpg" alt="@把SVGA 1.0的文件后缀改成zip，解压就会得到图片文件和movie.spec | center"></p>
 <center><font color="#a0a6bb">把SVGA 1.0的文件后缀改成zip，解压就会得到图片文件和movie.spec文件</font></center>
@@ -385,7 +388,8 @@
 <p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s02.jpg" alt="@用记事本打开movie.spec，会看到很多代码 | center"></p>
 <center><font color="#a0a6bb">用记事本打开movie.spec，会看到很多代码</font></center>
 
-<p>压缩包里的图片，是动画素材，而动画的信息，保存在<code>movie.spec</code>文件里。<br>换句话说，<strong><font color="#000">SVGA，是把动画用代码的方式记录了下来，打包成一个文件，然后放到各端的播放器上播出来。</font></strong>(这就导致，An、Ae里的滤镜、效果，要支持比较困难，因为代码能记录的动画是比较有限的。)</p>
+<p>压缩包里的图片，是动画素材，而动画的信息，保存在<code>movie.spec</code>文件里。</p>
+<p>换句话说，<strong><font color="#000">SVGA，是把动画用代码的方式记录了下来，打包成一个文件，然后放到各端的播放器上播出来。</font></strong>(这就导致，An、Ae里的滤镜、效果，要支持比较困难，因为代码能记录的动画是比较有限的。)</p>
 <hr>
 <h1 id="二、SVGA的优势是什么？"><a href="#二、SVGA的优势是什么？" class="headerlink" title="二、SVGA的优势是什么？"></a>二、SVGA的优势是什么？</h1><p>常见的动效实现方式：<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s04.jpg" alt="center"></p>
 <p>分成几个角度来看这些方案：</p>
@@ -416,7 +420,8 @@
 
 <p><span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f611.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f611.png?v8">😑</span> 不要被代码吓到…其实就是，<br>方式一<strong>只记录每个关键帧的数据</strong><br>方式二<strong>记录每一帧的数据</strong></p>
 <p><strong><font color="#000">上面提到SVGA中的<code>movie.spec</code>文件，使用的是方式二。</font></strong></p>
-<p>方式二的优点：<br><strong>性能更好</strong>：客户端播放器只需读取和显示每一帧里，图片资源的动画属性（位置、透明度、缩放等信息）不需要解析计算缓动动画等。而方式一会把缓动的解析的计算量给到播放器端去实现，播放器端就需要消耗更多计算量，性能消耗大。<br>方式二的缺点：<br><strong>数据量多</strong>：如果时长太长，帧数多，数据就多。时长太长的动画，加载会花多点时间。<br><strong>帧数固定</strong>：这个也不能说是缺点吧。方式一，理论上帧率随实际环境决定，不是由输出的文件决定。而方式二由于是按帧来记录，所以帧率固定为输出时的设定。</p>
+<p>方式二的优点：<br><strong>性能更好</strong>：客户端播放器只需读取和显示每一帧里，图片资源的动画属性（位置、透明度、缩放等信息）不需要解析计算缓动动画等。而方式一会把缓动的解析的计算量给到播放器端去实现，播放器端就需要消耗更多计算量，性能消耗大。</p>
+<p>方式二的缺点：<br><strong>数据量多</strong>：如果时长太长，帧数多，数据就多。时长太长的动画，加载会花多点时间。<br><strong>帧数固定</strong>：这个也不能说是缺点吧。方式一，理论上帧率随实际环境决定，不是由输出的文件决定。而方式二由于是按帧来记录，所以帧率固定为输出时的设定。</p>
 <p>也就是说，<strong><font color="#000">SVGA文件适合时长较短的动画</font></strong>，时长太长可以考虑分成几个SVGA来制作。而直播间里的动效，一般8秒以内，最适合SVGA。</p>
 <blockquote>
 <h4 id="SVGA和Lottie"><a href="#SVGA和Lottie" class="headerlink" title="SVGA和Lottie"></a>SVGA和Lottie</h4><p>Lottie就是用方式一来记录动画。<br>目前来说，简单理解就是性能比SVGA差点，对矢量的支持好点。<br>这里不展开，更多信息参考链接：<br><a href="https://airbnb.design/lottie/" target="_blank" rel="noopener">lottie官网</a><br><a href="https://github.com/airbnb/lottie-android" target="_blank" rel="noopener">Github上的lotte</a></p>
