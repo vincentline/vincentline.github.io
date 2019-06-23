@@ -3076,6 +3076,14 @@ pre {
   bottom: 470px;
   right: 30px;
 }
+@media (max-width: 767px) {
+  #at-expanding-share-button {
+    width: 100px;
+    height: 100px;
+    bottom: 150px;
+    right: 10px;
+  }
+}
 #QR > div:hover p {
   animation: none;
 }
