@@ -127,7 +127,7 @@
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/%E5%86%B0.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgamengban02.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/%E6%B8%B8%E8%BD%AE50022_1.gif">
-<meta property="og:updated_time" content="2019-06-23T17:59:46.961Z">
+<meta property="og:updated_time" content="2019-06-23T18:05:57.460Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于SVGA（一）">
 <meta name="twitter:description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦…… ✨SVGA✨是一个比较靠谱的解决方案，从设计软件导出到移动，到web、PC，3端一条龙全支持，设计师只要把动效导出SVGA就完成输出，很好的解决以上痛点。 工作中对SVGA的接触比多，小结了一篇">
@@ -450,6 +450,7 @@
 </tr>
 </tbody></table>
 <p>可以看到，SVGA评分达到最高的17分。<br>实际使用，不同的使用场景下会有不同的需求。直播间礼物动效，SVGA无疑是最适合的。</p>
+<hr>
 <p>下面是一些自己的理解，这里也许偏技术一点，但是原理很简单，有兴趣可以看看：</p>
 <h4 id="PS-SVGA记录动画数据的特点"><a href="#PS-SVGA记录动画数据的特点" class="headerlink" title="PS: SVGA记录动画数据的特点"></a>PS: SVGA记录动画数据的特点</h4><p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/jieshi01.gif" alt="@这是一个缓动位移动画 | center"></p>
 <center><font color="#a0a6bb">这是一个缓动位移动画</font></center>
@@ -471,10 +472,10 @@
 <blockquote>
 <h4 id="SVGA和Lottie"><a href="#SVGA和Lottie" class="headerlink" title="SVGA和Lottie"></a>SVGA和Lottie</h4><p>另外提一下另一种类似SVGA的方案–Lottie。Lottie是用方式一来记录动画。<br>我对Lottie了解不多，我的理解是性能比SVGA差点，对矢量的支持好点。这里不展开，更多信息参考链接：<br><a href="https://airbnb.design/lottie/" target="_blank" rel="noopener">lottie官网</a><br><a href="https://github.com/airbnb/lottie-android" target="_blank" rel="noopener">Github上的lotte</a></p>
 </blockquote>
-<h4 id="PS-动效和播放性能的关系"><a href="#PS-动效和播放性能的关系" class="headerlink" title="PS: 动效和播放性能的关系"></a>PS: 动效和播放性能的关系</h4><p>如图，动画和性能的关系：动画复杂，占用的是CPU；文件过大，占用的是内存；解码复杂，占用的是CPU；文件大占带宽下载慢。<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/tujie01.jpg" alt="@一般情况动效和性能的关系 | center"></p>
+<h4 id="PS-动效和播放性能的关系"><a href="#PS-动效和播放性能的关系" class="headerlink" title="PS: 动效和播放性能的关系"></a>PS: 动效和播放性能的关系</h4><p>如图，动画和性能的关系：动画复杂，占用的是CPU；文件过大，占用的是内存；解码复杂，占用的是CPU；文件大，占带宽下载慢。<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/tujie01.jpg" alt="@一般情况动效和性能的关系 | center"></p>
 <!--  如果比喻成拼乐高：①把乐高拿到手上，就是加载到内存，承载物品的是内存；②有不同的拼乐高方式，就是CPU对文件的解码过程；③需要用到特定工具来拼，就是需要格式支持的工具，例如客户端需要添加SVGA播放器；④拼的过程，就是CPU通过各种计算完成对信息的处理；⑤拼好后再把乐高放到某个位置上，就是将内存里的东西放到GPU显示。-->
 <blockquote>
-<p>当然了，这个过程实际会复杂很多，不同系统为了性能最优化也会有不同的策略，这种只是简单的说明。</p>
+<p>当然了，系统运行过程实际会复杂很多，不同系统为了性能最优化也会有不同的策略，这种只是简单的说明。</p>
 </blockquote>
 <p>例如：<br>序列帧类文件大就下载慢、占内存，但不那么耗CPU；<br>粒子动画耗CPU，但不占内存，下载快；<br>SVGA和手写类，总体来讲性能很好，如果动画过于复杂矢量元素多也会耗CPU，占内存但比序列帧类少；<br>等等…</p>
 <h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><ol>
