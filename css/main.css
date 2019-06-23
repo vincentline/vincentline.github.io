@@ -295,8 +295,12 @@ blockquote {
   padding: 20px 18px;
   margin: 26px 0 0 0;
   color: #666;
+  background-color: #f7f7f7;
+  border-left: 4px solid #666;
+}
+blockquote:hover {
+  border-left: 4px solid #222;
   background-color: #fbfbfb;
-  border-left: 6px solid #ddd;
 }
 blockquote p {
   margin: 0;
@@ -1307,14 +1311,13 @@ pre .javascript .function {
   }
 }
 .post-body p a {
-  color: #222;
+  color: #00c8ec;
   border-bottom: 2px solid;
   text-decoration: none;
   font-weight: 700;
 }
-.post-body p a ；,
 .post-body p a:hover {
-  color: #ec4800;
+  color: #ff5208;
   border-bottom: 2px solid;
   text-decoration: none;
 }
