@@ -1132,15 +1132,15 @@ pre .javascript .function {
 .back-to-top {
   box-sizing: border-box;
   position: fixed;
-  right: 35px;
+  right: 30px;
   z-index: 1040;
-  width: 40px;
-  height: 40px;
-  padding: 7px;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
   background: #222;
-  border-radius: 50%;
-  bottom: 414px;
-  font-size: 18px;
+  border-radius: 48%;
+  bottom: 424px;
+  font-size: 22px;
   opacity: 1;
   color: #fff;
   cursor: pointer;
@@ -1164,9 +1164,9 @@ pre .javascript .function {
 }
 .back-to-top.back-to-top-on {
   bottom: 350px;
-  width: 50px;
-  height: 50px;
-  right: 30px;
+  width: 60px;
+  height: 60px;
+  right: 25px;
 }
 .header-inner {
   position: relative;
@@ -1816,14 +1816,13 @@ pre .javascript .function {
 }
 .sidebar-toggle {
   position: fixed;
-  right: 30px;
-  bottom: 410px;
-  width: 22px;
-  height: 22px;
-  padding: 17px 14px 11px 14px;
+  right: 25px;
+  bottom: 420px;
+  width: 60px;
+  height: 60px;
   background: #222;
   background-image: url("/images/toux.png");
-  background-size: 50px 50px;
+  background-size: 60px 60px;
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
@@ -1833,7 +1832,7 @@ pre .javascript .function {
 }
 .sidebar-toggle:hover {
   background-image: url("/images/toux02.png");
-  background-size: 50px 50px;
+  background-size: 60px 60px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-toggle {
@@ -2067,6 +2066,15 @@ pre .javascript .function {
 }
 .footer img {
   border: none;
+}
+.footer-inner {
+  text-align: center;
+}
+.footer-inner .copyright .author {
+  color: #ec4800;
+}
+.footer-inner .copyright .author:hover {
+  border-bottom: 2px solid;
 }
 .with-love {
   display: inline-block;
@@ -3064,8 +3072,12 @@ pre {
   border: 2px solid #fff;
 }
 #at-expanding-share-button {
-  bottom: 470px;
-  right: 30px;
+  bottom: 490px;
+  right: 25px;
+}
+.at-expanding-share-button.at-expanding-share-button-desktop .at-expanding-share-button-toggle-bg {
+  height: 60px;
+  width: 60px;
 }
 #QR > div:hover p {
   animation: none;
