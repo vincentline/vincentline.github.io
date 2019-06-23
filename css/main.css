@@ -1132,15 +1132,15 @@ pre .javascript .function {
 .back-to-top {
   box-sizing: border-box;
   position: fixed;
-  right: 30px;
+  right: 35px;
   z-index: 1040;
-  width: 50px;
-  height: 50px;
-  padding: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
   background: #222;
-  border-radius: 48%;
-  bottom: 424px;
-  font-size: 22px;
+  border-radius: 50%;
+  bottom: 414px;
+  font-size: 18px;
   opacity: 1;
   color: #fff;
   cursor: pointer;
@@ -1164,9 +1164,9 @@ pre .javascript .function {
 }
 .back-to-top.back-to-top-on {
   bottom: 350px;
-  width: 60px;
-  height: 60px;
-  right: 25px;
+  width: 50px;
+  height: 50px;
+  right: 30px;
 }
 .header-inner {
   position: relative;
@@ -1816,13 +1816,14 @@ pre .javascript .function {
 }
 .sidebar-toggle {
   position: fixed;
-  right: 25px;
-  bottom: 420px;
-  width: 60px;
-  height: 60px;
+  right: 30px;
+  bottom: 410px;
+  width: 22px;
+  height: 22px;
+  padding: 17px 14px 11px 14px;
   background: #222;
   background-image: url("/images/toux.png");
-  background-size: 60px 60px;
+  background-size: 50px 50px;
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
@@ -1832,7 +1833,7 @@ pre .javascript .function {
 }
 .sidebar-toggle:hover {
   background-image: url("/images/toux02.png");
-  background-size: 60px 60px;
+  background-size: 50px 50px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-toggle {
@@ -1937,7 +1938,7 @@ pre .javascript .function {
   border-radius: 16px;
 }
 .links-of-author a:hover {
-  background-color: #444;
+  background-color: #ec4800;
   color: #fff;
 }
 .links-of-blogroll {
@@ -1964,7 +1965,7 @@ pre .javascript .function {
   border-bottom: 1px solid;
 }
 .links-of-blogroll-item a:hover {
-  color: #fff;
+  color: #ec4800;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -3072,12 +3073,8 @@ pre {
   border: 2px solid #fff;
 }
 #at-expanding-share-button {
-  bottom: 490px;
-  right: 25px;
-}
-.at-expanding-share-button.at-expanding-share-button-desktop .at-expanding-share-button-toggle-bg {
-  height: 60px;
-  width: 60px;
+  bottom: 470px;
+  right: 30px;
 }
 #QR > div:hover p {
   animation: none;
