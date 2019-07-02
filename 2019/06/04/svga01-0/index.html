@@ -117,6 +117,7 @@
 <meta property="og:description" content="前言从动效设计到开发实现中，总会遇到很多问题。我们导出各种格式来适应不同需求，但总是无法完美还原。要么文件太大，要么帧率低，要么颜色还原有问题，要么平台不支持，要么性能有问题，要么标注复杂动效非常麻烦…… ✨SVGA✨是一个比较靠谱的解决方案，设计师只要把动效导出SVGA就完成输出，并很好的解决以上痛点。 工作中对SVGA的接触比较多，小结了一篇面向初学者的科普向文章。 一、SVGA是什么？ 这是">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif">
+<meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgawebsite.png">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.jpg">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s02.jpg">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s04.jpg">
@@ -124,6 +125,8 @@
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/jieshi01.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s03.png">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/tujie01.jpg">
+<meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgahuojian.gif">
+<meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgamao.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/%E5%86%B0.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgamengban02.gif">
 <meta property="og:image" content="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/langren2.gif">
@@ -372,7 +375,8 @@
 
 <p>设计师完成动效设计后，输出的方式千千万万，例如最常见的<code>png序列帧</code>；把png序列帧合并到一起的<code>apng</code>、<code>webp</code>、<code>gif</code>；<code>视频格式</code>；Dragonbones、Spine、Deep Motion Creature导出的动画资源（一般是<code>jason格式</code> ）等等。</p>
 <p>而SVGA算是其中一种方式。</p>
-<p>SVGA是YY（欢聚时代）开发的一种动效实现解决方案。<a href="https://github.com/yyued" target="_blank" rel="noopener">SVGA在github上的内容</a></p>
+<p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgawebsite.png" alt="image"></p>
+<p><a href="http://svga.io/index.html" target="_blank" rel="noopener">SVGA官网</a><br>SVGA是YY（欢聚时代）开发的一种动效实现解决方案。<a href="https://github.com/yyued" target="_blank" rel="noopener">SVGA在github上的内容</a></p>
 <p>对前端工程师来说，这是支持iOS、Android、web三端播放、开发简单、性能好，对设计师来说，这是支持Ae、An制作导出，性能好、学习成本低的比较完善的方案。和上面其他格式的比较，后面会提到。</p>
 <p>直接解压一个SVGA 1.0的文件可以知道他的大概原理：</p>
 <p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.jpg" alt="@把SVGA 1.0的文件后缀改成zip，解压就会得到图片文件和movie.spec | center"></p>
@@ -483,12 +487,13 @@
 <li>性能表现更好；</li>
 <li>学习成本、使用成本低；</li>
 <li>支持动态替换资源图；</li>
+<li>支持AE表达式；</li>
 <li>等等…</li>
 </ol>
 <hr>
 <h1 id="三、SVGA动效实现小技巧"><a href="#三、SVGA动效实现小技巧" class="headerlink" title="三、SVGA动效实现小技巧"></a>三、SVGA动效实现小技巧</h1><p>SVGA适合广泛使用在很多地方，UI图标动效上、直播大礼物动效上、甚至游戏动效，不同的场景使用需求会很不同。先附上基本操作文档：[SVGA 设计使用指南][4] ，下面是讲SVGA在设计中的一些使用小技巧，希望可以不同场景下的使用给大家带来一些灵感。</p>
-<h2 id="1-图片key替换文字"><a href="#1-图片key替换文字" class="headerlink" title="1.图片key替换文字"></a>1.图片key替换文字</h2><p>SVGA中不支持文字，需要把文字转成图片或矢量图形。像用户名这种需要开发那边来控制显示的内容，曲线救国的方式就是，使用图片key的方式让开发动态替换。只需要把文字区域用透明png代替就行。</p>
-<h2 id="2-替换图片的使用"><a href="#2-替换图片的使用" class="headerlink" title="2. 替换图片的使用"></a>2. 替换图片的使用</h2><p>和第1点一样，所有图片都可以作为key来动态替换，替换成图片或文字。我们可以用这个功能做很多事情，例如：<br>用户头像、勋章之类不同情况显示不同图片；<br>多个状态的动画放在一个动效里，显示哪个状态的动画，开发通过控制图片key来实现；<br>游戏中角色皮肤和装备等换装效果，可以这种方式简单实现。<br>等等…</p>
+<h2 id="1-图片key替换文字"><a href="#1-图片key替换文字" class="headerlink" title="1.图片key替换文字"></a>1.图片key替换文字</h2><p>SVGA中不支持文字，需要把文字转成图片或矢量图形。像用户名这种需要开发那边来控制显示的内容，曲线救国的方式就是，使用图片key的方式让开发动态替换。只需要把文字区域用透明png代替就行。<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgahuojian.gif" alt="@SVGA替换文字和图片"></p>
+<h2 id="2-替换图片的使用"><a href="#2-替换图片的使用" class="headerlink" title="2. 替换图片的使用"></a>2. 替换图片的使用</h2><p>和第1点一样，所有图片都可以作为key来动态替换，替换成图片或文字。我们可以用这个功能做很多事情，例如：<br>用户头像、勋章之类不同情况显示不同图片；<br>多个状态的动画放在一个动效里，显示哪个状态的动画，开发通过控制图片key来实现；<br>游戏中角色皮肤和装备等换装效果，可以这种方式简单实现。<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgamao.gif" alt="@SVGA替换图片"></p>
 <h2 id="3-矢量蒙版的使用"><a href="#3-矢量蒙版的使用" class="headerlink" title="3. 矢量蒙版的使用"></a>3. 矢量蒙版的使用</h2><p>蒙版遮罩的支持，可以让动画在一个区域内播放。例如冰块里烟雾效果。<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/%E5%86%B0.gif" alt="@SVGA蒙版的使用 | center"></p>
 <p>例如可以做复杂的颜色变化的球。<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgamengban02.gif" alt="@SVGA蒙版的使用 | center"></p>
 <p><span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png?v8">😏</span> 还可以做些骚操作<br>例如当前屏幕碎裂效果：<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/langren2.gif" alt="@屏幕撕裂效果"></p>
