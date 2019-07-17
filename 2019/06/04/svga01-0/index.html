@@ -367,7 +367,8 @@
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>从动效设计到开发实现中，总会遇到很多问题。</p>
 <p>设计师纠结动画还原帧率低、有色差、格式多、标注动效麻烦、开发没有按效果来做…开发工程师纠结于文件太大、性能差、开发麻烦、设计师没说清楚这个动画怎么做…想想头皮发麻…<br>我们用不同的格式来应对不同需求，但总是没有最完善的方案出现。能不能设计师把动效文件丢给开发工程师，然后就完成所有工作呢？而且能满足设计师和开发工程师纠结的痛点？</p>
-<p><span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>SVGA<span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>就是一个比较靠谱的解决方案，设计师只要把动效导出SVGA就完成输出，并很好的解决以上痛点。<del>不用为此和开发撕逼了</del></p>
+<p><span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>SVGA<span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">✨</span>就是一个比较靠谱的解决方案，设计师只要把动效导出SVGA就完成输出，并很好的解决以上痛点。<del>不用为此再和开发撕逼了</del></p>
+<p>工作中对SVGA的接触比较多，小结了一篇面向初学者的科普向文章。</p>
 <h1 id="一、那么，SVGA是什么？"><a href="#一、那么，SVGA是什么？" class="headerlink" title="一、那么，SVGA是什么？"></a>一、那么，SVGA是什么？</h1><p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/sdld.gif" alt="@这是SVGA实现的动画效果 | center"></p>
 <center><font color="#a0a6bb">这是SVGA实现的动画效果</font></center>
 
@@ -375,7 +376,7 @@
 <p>而SVGA算是其中一种方式。</p>
 <p><a href="http://svga.io/index.html" target="_blank" rel="noopener">SVGA官网</a><br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgawebsite.png" alt="image"></p>
 <p>对设计师来说，SVGA支持Ae、An制作导出，效果好、学习成本低的比较完善的方案。</p>
-<p>直接解压一个SVGA 1.0的文件可以知道他的大概原理：</p>
+<p>我们来解压一个SVGA 1.0的文件，可以了解它是怎样保存我们做的动效的：</p>
 <p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s01.jpg" alt="@把SVGA 1.0的文件后缀改成zip，解压就会得到图片文件和movie.spec | center"></p>
 <center><font color="#a0a6bb">把SVGA 1.0的文件后缀改成zip，解压就会得到图片文件和movie.spec文件</font></center>
 
@@ -383,7 +384,7 @@
 <center><font color="#a0a6bb">用记事本打开movie.spec，会看到很多代码</font></center>
 
 <p>压缩包里的图片，是动画素材，而动画的信息，保存在<code>movie.spec</code>文件里。</p>
-<p><strong><font color="#000">SVGA，是把动画用代码的方式记录了下来，打包成一个文件，然后放到各端的播放器上播出来。</font></strong>当然同时这也决定了，An、Ae里的滤镜、效果，要支持比较困难，因为代码能记录的动画是比较有限的。</p>
+<p><strong><font color="#000">SVGA，是把动画用代码的方式记录了下来，打包成一个文件，然后放到各端的播放器上播出来。他比序列帧类那种保存所有动效每一帧的每个像素相比，文件要小非常多。</font></strong>当然同时这也决定了，An、Ae里的滤镜、效果，要支持比较困难，因为代码记录更便于记录基础动画。有滤镜的动画需要播放器支持滤镜效果，开发成本高，应用价值也不大，也可能失去SVGA的性能优势。</p>
 <hr>
 <h1 id="二、SVGA的优势是什么？"><a href="#二、SVGA的优势是什么？" class="headerlink" title="二、SVGA的优势是什么？"></a>二、SVGA的优势是什么？</h1><p>常见的动效输出方式：<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/s04.jpg" alt="center"></p>
 <p>从<strong>动画质量</strong>、<strong>播放性能</strong>、<strong>文件大小</strong>、<strong>使用成本</strong>几个角度来看这些方式：</p>
@@ -451,7 +452,7 @@
 </tr>
 </tbody></table>
 <p>可以看到，SVGA评分达到最高的17分。<br>实际使用，不同的使用场景下会有不同的需求。直播间礼物动效，SVGA无疑是最适合的。</p>
-<p>下面是一些自己的理解，这里也许偏技术一点，但是原理很简单，有兴趣可以看看：</p>
+<h2 id="咳咳"><a href="#咳咳" class="headerlink" title="咳咳"></a>咳咳</h2><p>下面是一些自己的理解，这里也许偏技术一点，但是原理很简单，有兴趣可以看看：</p>
 <h2 id="PS-SVGA记录动画数据的特点"><a href="#PS-SVGA记录动画数据的特点" class="headerlink" title="PS: SVGA记录动画数据的特点"></a>PS: SVGA记录动画数据的特点</h2><p><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/jieshi01.gif" alt="@这是一个缓动位移动画 | center"></p>
 <center><font color="#a0a6bb">这是一个缓动位移动画</font></center>
 
@@ -478,13 +479,15 @@
 <p>当然了，这个过程实际会复杂很多，不同系统为了性能最优化也会有不同的策略，这种只是简单的说明。</p>
 </blockquote>
 <p>例如：<br>序列帧类文件大就下载慢、占内存，但不那么耗CPU；<br>粒子动画耗CPU，但不占内存，下载快；<br>SVGA和手写类，总体来讲性能很好，如果动画过于复杂矢量元素多也会耗CPU，占内存但比序列帧类少；<br>等等…</p>
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><ol>
+<h2 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h2><ol>
 <li>强大的设计工具支持；</li>
 <li>支持多平台；</li>
 <li>性能表现更好；</li>
 <li>学习成本、使用成本低；</li>
 <li>支持动态替换资源图；</li>
 <li>支持AE表达式；</li>
+<li>支持矢量和位图蒙版；</li>
+<li>可控制播放动画中某一帧；</li>
 <li>等等…</li>
 </ol>
 <hr>
@@ -497,7 +500,7 @@
 <p>例如可以做复杂的颜色变化的球。<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/svgamengban02.gif" alt="@SVGA蒙版的使用 | center"></p>
 <p><span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png?v8">😏</span> 还可以做些骚操作<br>例如当前屏幕碎裂效果：<br><img src="https://blog-1258489735.cos.ap-chengdu.myqcloud.com/langren2.gif" alt="@屏幕撕裂效果"></p>
 <p>做好的屏幕碎裂，屏幕的资源图用图片key，让开发工程师替换成当前界面截屏。当效果出现时开发工程师先做截屏，然后截屏的图作为图片key的替换图出现在动画里。（播放前截图获取截图资源图+矢量蒙版+图片替换。想法而已，其可行性需要和开发工程师确认）</p>
-<h2 id="4-图片蒙版的使用"><a href="#4-图片蒙版的使用" class="headerlink" title="4. 图片蒙版的使用"></a>4. 图片蒙版的使用</h2><p>解决蒙版衔接处的问题，羽化一个图片的方式<br><del>例如可以实现类似极光的效果</del></p>
+<h2 id="4-图片蒙版的使用（尚未上线）"><a href="#4-图片蒙版的使用（尚未上线）" class="headerlink" title="4. 图片蒙版的使用（尚未上线）"></a>4. 图片蒙版的使用（尚未上线）</h2><p>解决蒙版衔接处的问题，羽化一个图片的方式<br><del>例如可以实现类似极光的效果</del></p>
 <h2 id="5-开发工程师可以控制播放哪一帧"><a href="#5-开发工程师可以控制播放哪一帧" class="headerlink" title="5. 开发工程师可以控制播放哪一帧"></a>5. 开发工程师可以控制播放哪一帧</h2><p>这样可以灵活的在不同情况下播放不同的动画。例如可以把动画分成几个部分，不同情况播放不同部分。<br>例如特殊造型的进度条，有时候开发工程师做蒙版比较麻烦的话，可以直接给个100帧SVGA，让开发工程师加载百分比，播对应百分比帧。</p>
 <h2 id="6-支持简单的矢量动画。"><a href="#6-支持简单的矢量动画。" class="headerlink" title="6. 支持简单的矢量动画。"></a>6. 支持简单的矢量动画。</h2><p>常见的图形动画都可以做了。至于复杂的，就尽量少用。</p>
 <h2 id="7-输出优化"><a href="#7-输出优化" class="headerlink" title="7.输出优化"></a>7.输出优化</h2><p>一套动效里，同样的图片在多个SVGA动效里重复出现，能不能让他们共用一套图片减少实际图片量呢？可以考虑①这些动效做在一个SVGA里面，连续播放，然后开发工程师根据需要控制播放哪部分帧。②把重复的图片用图片替换方式，多个SVGA都调用一套图片。（当然了这些方式开发工程师那边都有工作量，需要先沟通好）</p>
@@ -753,7 +756,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、那么，SVGA是什么？"><span class="nav-number">2.</span> <span class="nav-text">一、那么，SVGA是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、SVGA的优势是什么？"><span class="nav-number">3.</span> <span class="nav-text">二、SVGA的优势是什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#更直观点的就是打个分："><span class="nav-number">3.1.</span> <span class="nav-text">更直观点的就是打个分：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PS-SVGA记录动画数据的特点"><span class="nav-number">3.2.</span> <span class="nav-text">PS: SVGA记录动画数据的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SVGA和Lottie"><span class="nav-number">3.3.</span> <span class="nav-text">SVGA和Lottie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PS-关于播放性能、文件大小"><span class="nav-number">3.4.</span> <span class="nav-text">PS: 关于播放性能、文件大小</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总结一下："><span class="nav-number">3.4.1.</span> <span class="nav-text">总结一下：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、SVGA动效实现小技巧"><span class="nav-number">4.</span> <span class="nav-text">三、SVGA动效实现小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-图片key替换文字"><span class="nav-number">4.1.</span> <span class="nav-text">1.图片key替换文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-替换图片的使用"><span class="nav-number">4.2.</span> <span class="nav-text">2. 替换图片的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-矢量蒙版的使用"><span class="nav-number">4.3.</span> <span class="nav-text">3. 矢量蒙版的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-图片蒙版的使用"><span class="nav-number">4.4.</span> <span class="nav-text">4. 图片蒙版的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-开发工程师可以控制播放哪一帧"><span class="nav-number">4.5.</span> <span class="nav-text">5. 开发工程师可以控制播放哪一帧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-支持简单的矢量动画。"><span class="nav-number">4.6.</span> <span class="nav-text">6. 支持简单的矢量动画。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-输出优化"><span class="nav-number">4.7.</span> <span class="nav-text">7.输出优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-ghost-其他一些奇技淫巧"><span class="nav-number">4.8.</span> <span class="nav-text">8. 👻其他一些奇技淫巧</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、那么，SVGA是什么？"><span class="nav-number">2.</span> <span class="nav-text">一、那么，SVGA是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、SVGA的优势是什么？"><span class="nav-number">3.</span> <span class="nav-text">二、SVGA的优势是什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#更直观点的就是打个分："><span class="nav-number">3.1.</span> <span class="nav-text">更直观点的就是打个分：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#咳咳"><span class="nav-number">3.2.</span> <span class="nav-text">咳咳</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PS-SVGA记录动画数据的特点"><span class="nav-number">3.3.</span> <span class="nav-text">PS: SVGA记录动画数据的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SVGA和Lottie"><span class="nav-number">3.4.</span> <span class="nav-text">SVGA和Lottie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PS-关于播放性能、文件大小"><span class="nav-number">3.5.</span> <span class="nav-text">PS: 关于播放性能、文件大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结一下："><span class="nav-number">3.6.</span> <span class="nav-text">总结一下：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、SVGA动效实现小技巧"><span class="nav-number">4.</span> <span class="nav-text">三、SVGA动效实现小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-图片key替换文字"><span class="nav-number">4.1.</span> <span class="nav-text">1.图片key替换文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-替换图片的使用"><span class="nav-number">4.2.</span> <span class="nav-text">2. 替换图片的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-矢量蒙版的使用"><span class="nav-number">4.3.</span> <span class="nav-text">3. 矢量蒙版的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-图片蒙版的使用（尚未上线）"><span class="nav-number">4.4.</span> <span class="nav-text">4. 图片蒙版的使用（尚未上线）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-开发工程师可以控制播放哪一帧"><span class="nav-number">4.5.</span> <span class="nav-text">5. 开发工程师可以控制播放哪一帧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-支持简单的矢量动画。"><span class="nav-number">4.6.</span> <span class="nav-text">6. 支持简单的矢量动画。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-输出优化"><span class="nav-number">4.7.</span> <span class="nav-text">7.输出优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-ghost-其他一些奇技淫巧"><span class="nav-number">4.8.</span> <span class="nav-text">8. 👻其他一些奇技淫巧</span></a></li></ol></li></ol></div>
             
 
           </div>
