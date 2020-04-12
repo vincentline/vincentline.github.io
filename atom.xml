@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/vincentline/vincentline.github.io.git/"/>
-  <updated>2020-04-12T20:13:24.185Z</updated>
+  <updated>2020-04-12T20:19:45.896Z</updated>
   <id>https://github.com/vincentline/vincentline.github.io.git/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“svga动效作品</title>
+    <link href="https://github.com/vincentline/vincentline.github.io.git/2020/04/13/%E2%80%9Csvga%E5%8A%A8%E6%95%88%E4%BD%9C%E5%93%81/"/>
+    <id>https://github.com/vincentline/vincentline.github.io.git/2020/04/13/“svga动效作品/</id>
+    <published>2020-04-13T06:18:09.000Z</published>
+    <updated>2020-04-12T20:19:45.896Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>HEXO NEXT魔改记录</title>
