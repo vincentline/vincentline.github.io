@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-07-02T14:16:22.566Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://github.com/vincentline/vincentline.github.io.git/"/>
+  <updated>2020-04-12T19:09:01.231Z</updated>
+  <id>https://github.com/vincentline/vincentline.github.io.git/</id>
   
   <author>
     <name>VINCENT LIM</name>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HEXO NEXT魔改记录</title>
-    <link href="http://yoursite.com/2019/06/16/HEXO-NEXT%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/"/>
-    <id>http://yoursite.com/2019/06/16/HEXO-NEXT魔改记录/</id>
+    <title>HEXO NEXT魔改记录（测试）</title>
+    <link href="https://github.com/vincentline/vincentline.github.io.git/2019/06/16/HEXO-NEXT%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/"/>
+    <id>https://github.com/vincentline/vincentline.github.io.git/2019/06/16/HEXO-NEXT魔改记录/</id>
     <published>2019-06-16T13:03:15.000Z</published>
-    <updated>2019-07-02T14:16:22.566Z</updated>
+    <updated>2020-04-12T19:09:01.231Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;前言00000&quot;&gt;&lt;a href=&quot;#前言00000&quot; class=&quot;headerlink&quot;
         
       
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>直播动画用的SVGA文件是什么？</title>
-    <link href="http://yoursite.com/2019/06/04/svga01-0/"/>
-    <id>http://yoursite.com/2019/06/04/svga01-0/</id>
+    <link href="https://github.com/vincentline/vincentline.github.io.git/2019/06/04/svga01-0/"/>
+    <id>https://github.com/vincentline/vincentline.github.io.git/2019/06/04/svga01-0/</id>
     <published>2019-06-04T14:20:32.000Z</published>
     <updated>2019-06-26T13:46:09.000Z</updated>
     
