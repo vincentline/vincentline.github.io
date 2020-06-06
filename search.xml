@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[svga动效作品]]></title>
+    <title><![CDATA[SVGA动效作品]]></title>
     <url>%2F2020%2F04%2F13%2Fsvga%E5%8A%A8%E6%95%88%E4%BD%9C%E5%93%81%2F</url>
-    <content type="text"><![CDATA[document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
+    <content type="text"><![CDATA[一些礼物相关的动效作品，输出为SVGA的。 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[闲谈动画01情感]]></title>
+    <url>%2F2019%2F06%2F22%2F%E5%85%B3%E4%BA%8E%E5%8A%A8%E7%94%BB%E7%9A%84%E7%82%B9%E6%BB%B401%E6%83%85%E6%84%9F%2F</url>
+    <content type="text"><![CDATA[动画相对于UI来说，是多了很多感情色彩。 UI、交互之类，思考各种逻辑，各种目的目标，各种引导用户，各种使用流程等，而动画有时候会需要很多具有感情色彩的东西，让动画更生动有趣，更好表达想表达的。 动画的表现力，遵循一些运动原理（加速度、惯性、形变、弹力、节奏），通过氛围的营造程度和情绪、情感的表达程度，来体现的。 氛围营造，是传达一种情感，让用户去感受；情绪、情感的表达，是表现事物的本身的情感。 不同的运动节奏和运动的方式，会让氛围的营造和情绪情感的表达得到很大的提升。 角色的动画，当角色处在情绪中时，角色的动作、表情都会受情绪影响，迟疑、犹豫、惊呆、颤抖、呼吸节奏、情绪逐步递进，动作和节奏就都不同了。 《人工智能》里，AI小男孩，为什么一开始可以简单分辨出他是机器人，就算外貌完全是人类样子？其实就是表情动作的问题。或者说，动作的目的性强、简单直接没有多余的动作，没有情感，让他看起来非人类。但是拥有情感后的AI小男孩，已经比较难区分是不是机器人了，因为他的动作表情已经受到情感和情绪的影响，看起来就更像人类了。这只是电影，我只是想说受情绪情感影响的表情动作才更有人味。 情绪是情感的表现之一，角色的情绪表达，人物的情绪是不会突然出现的，情绪出现的节奏，变化，是有一个心理变化流程的。也许可以用起-承-转-合来形容，然后这个变化过程用合适的细节元素来表现。什么地方先动，按什么原理动；什么后动，要卡什么节奏点才更有感觉。这个节奏处理的好才能让动画更生动。 总之就是让角色变成戏精，通过调整节奏和加戏，让动画变的很有趣。 所以设计的时候经常要想象自己处在那个情绪或场景下会怎么做，是什么样的节奏，体验那个情绪，很有意思。 没错，自己慢慢会变成戏精的。。。 这个也是动画的魅力之一。 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
   </entry>
   <entry>
     <title><![CDATA[HEXO NEXT魔改记录]]></title>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/vincentline/vincentline.github.io.git/"/>
-  <updated>2020-04-13T08:12:00.041Z</updated>
+  <updated>2020-06-06T16:09:53.967Z</updated>
   <id>https://github.com/vincentline/vincentline.github.io.git/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>svga动效作品</title>
+    <title>SVGA动效作品</title>
     <link href="https://github.com/vincentline/vincentline.github.io.git/2020/04/13/svga%E5%8A%A8%E6%95%88%E4%BD%9C%E5%93%81/"/>
     <id>https://github.com/vincentline/vincentline.github.io.git/2020/04/13/svga动效作品/</id>
     <published>2020-04-13T06:18:09.000Z</published>
-    <updated>2020-04-13T08:12:00.041Z</updated>
+    <updated>2020-06-06T16:09:53.967Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,34 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;blockquote&gt;
+&lt;p&gt;一些礼物相关的动效作品，输出为SVGA的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>闲谈动画01情感</title>
+    <link href="https://github.com/vincentline/vincentline.github.io.git/2019/06/22/%E5%85%B3%E4%BA%8E%E5%8A%A8%E7%94%BB%E7%9A%84%E7%82%B9%E6%BB%B401%E6%83%85%E6%84%9F/"/>
+    <id>https://github.com/vincentline/vincentline.github.io.git/2019/06/22/关于动画的点滴01情感/</id>
+    <published>2019-06-21T18:21:50.000Z</published>
+    <updated>2019-06-26T13:59:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;动画相对于UI来说，是多了很多感情色彩。&lt;/p&gt;
+&lt;p&gt;UI、交互之类，思考各种逻辑，各种目的目标，各种引导用户，各种使用流程等，而动画有时候会需要很多具有感情色彩的东西，让动画更生动有趣，更好表达想表达的。&lt;/p&gt;
+&lt;p&gt;动画的表现力，遵循一些运动原理（加速度、惯性、形变
         
       
     
