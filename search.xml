@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[SVGA动效作品]]></title>
+    <title><![CDATA[SVGA动效应用案例]]></title>
     <url>%2F2020%2F04%2F13%2Fsvga%E5%8A%A8%E6%95%88%E4%BD%9C%E5%93%81%2F</url>
-    <content type="text"><![CDATA[一些礼物相关的动效作品，涉及多个业务，所以图标尺寸不一。均为输出SVGA的。 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
+    <content type="text"><![CDATA[一些礼物相关的SVGA动效应用作品，涉及多个业务，所以图标尺寸不一。均为输出SVGA。 ：arrow_up： 仙女降临大礼物 ：arrow_up： 高等级权杖大礼物 ：arrow_up： 全屏火箭大礼物 ：arrow_up： 全屏流星雨大礼物 ：arrow_up： 圣诞树大礼物 ：arrow_up： 音乐盒大礼物 ：arrow_up： 小火箭大礼物 ：arrow_up： 圣诞水晶球大礼物 ：arrow_up： 桃花铃 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
   </entry>
   <entry>
     <title><![CDATA[闲谈动画01情感]]></title>
