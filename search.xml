@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[SVGA动效作品]]></title>
     <url>%2F2020%2F04%2F13%2Fsvga%E5%8A%A8%E6%95%88%E4%BD%9C%E5%93%81%2F</url>
-    <content type="text"><![CDATA[一些礼物相关的动效作品，输出为SVGA的。 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
+    <content type="text"><![CDATA[一些礼物相关的动效作品，涉及多个业务，所以图标尺寸不一。均为输出SVGA的。 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
   </entry>
   <entry>
     <title><![CDATA[闲谈动画01情感]]></title>
