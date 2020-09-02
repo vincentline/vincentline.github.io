@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[一个小视频]]></title>
+    <title><![CDATA[早前一个小视频]]></title>
     <url>%2F2020%2F09%2F02%2F%E4%B8%80%E4%B8%AA%E5%B0%8F%E8%A7%86%E9%A2%91%2F</url>
-    <content type="text"><![CDATA[https://blog-1258489735.cos.ap-chengdu.myqcloud.com/work/langrensha.mp4 123 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
+    <content type="text"><![CDATA[2018年给狼人杀做的一个印尼版小视频。第一次完成整个简单的制作流程。 先根据脚本做了初步分镜 根据分镜需要的内容画各种东西，有部分是用了游戏里的元素来制作。 然后做每个镜头的动画，做好衔接的地方，然后拼起来，再加音效配音字幕什么的，完成。 最终效果： 您的浏览器不支持播放该视频！ 由于时间关系其实没有再做细下去。动画很多时候不单是画的部分，还有实现的部分，这部分更像个工程。 当时做的很开心，发觉我真是很喜欢做动画啊，能专心做动画是非常棒的体验。 document.querySelectorAll('.github-emoji') .forEach(el => { if (!el.dataset.src) { return; } const img = document.createElement('img'); img.style = 'display:none !important;'; img.src = el.dataset.src; img.addEventListener('error', () => { img.remove(); el.style.color = 'inherit'; el.style.backgroundImage = 'none'; el.style.background = 'none'; }); img.addEventListener('load', () => { img.remove(); }); document.body.appendChild(img); });]]></content>
   </entry>
   <entry>
     <title><![CDATA[SVGA动效应用案例]]></title>
